@@ -49,8 +49,8 @@ function timeCounter() {
   let countedTime = userSelectedDate - timeNow;
 
   if (countedTime <= 0) {
-    clearInterval();
-    timeUpdate({ daysEl: 0, hoursEl: 0, minutesEl: 0, secondsEl: 0 });
+    clearInterval(timer);
+    timeUpdate({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     inputEl.disabled = false;
     return;
   }
